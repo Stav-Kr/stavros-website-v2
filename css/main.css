@@ -2,7 +2,7 @@
     --primary-color: white;
     --primary-color-highlight: white;
     --bs-body-font-family: 'Roboto Mono', monospace;
-    --head_color: #20C20E;
+    --head_color: #000000;
 }
 
 /* Hero section */
@@ -12,7 +12,7 @@
     height: 100vh;
     background-color:var(--primary-color);
     overflow: hidden;
-    background-image: url('../images/astro.jpg');
+    background-image: url('../images/paper.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -26,19 +26,20 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(15, 10, 2, 0.137);
+    background-color: #fffdd0a2;
     z-index: -1;
 
 }
 
 h1, h2, h3, h4, h5, h6,
-.dispplay-3{
+.display-5{
     color: var(--head_color);
 
 }
 
 @media  (max-width: 1024px) {
-    .hero {
-        background-image: url('../images/astro_mb.jpg');
+    .display-5 {
+        
+        font-size: medium;
     }
 }
