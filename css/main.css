@@ -57,11 +57,10 @@ html {
   background-color: rgba(0, 0, 0, 0.938);
   z-index: -1;
 }
-.ah{
+.ah {
   position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Typing animation*/
@@ -137,7 +136,29 @@ a:hover {
   transition-delay: 0.8s;
   animation: hop 1s infinite alternate;
 }
+ .floating {
+     animation-name: floating;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+    
+     display: block;
+     margin: 0 auto;
+ }
 
+ @keyframes floating {
+     from {
+         transform: translate(0, 0px);
+     }
+
+     65% {
+         transform: translate(0, 15px);
+     }
+
+     to {
+         transform: translate(0, -0px);
+     }
+ }
 @keyframes hop {
   from {
     transform: translateY(0px);
@@ -152,30 +173,32 @@ a:hover {
 .abt {
   padding-top: 40px;
   padding-bottom: 40px;
-  
 }
-.abt_content-width{
+.abt_content-width {
   max-width: 456px;
   margin: 0 auto;
 }
 
-.abt-brack{
+.abt-brack {
   color: rebeccapurple;
 }
+
 /*Media*/
 @media (max-width: 1024px) {
   .display-5 {
     font-size: medium;
   }
-  p{
+  p {
     text-align: center;
   }
   .abt {
     padding-top: 300px;
     padding-left: 10px;
     padding-right: 10px;
-  
+    padding-bottom: 400px;
   }
+  
+  
 }
 
 @media (min-width: 544px) {
@@ -183,8 +206,5 @@ a:hover {
     padding-top: 80px;
     padding-left: 80px;
   }
-  .abt_section-thumbnail {
-    height: auto;
-    object-fit: cover;
-  }
+  
 }
