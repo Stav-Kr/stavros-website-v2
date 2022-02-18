@@ -136,29 +136,29 @@ a:hover {
   transition-delay: 0.8s;
   animation: hop 1s infinite alternate;
 }
- .floating {
-     animation-name: floating;
-     animation-duration: 3s;
-     animation-iteration-count: infinite;
-     animation-timing-function: ease-in-out;
-    
-     display: block;
-     margin: 0 auto;
- }
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 
- @keyframes floating {
-     from {
-         transform: translate(0, 0px);
-     }
+  display: block;
+  margin: 0 auto;
+}
 
-     65% {
-         transform: translate(0, 15px);
-     }
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
 
-     to {
-         transform: translate(0, -0px);
-     }
- }
+  65% {
+    transform: translate(0, 15px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}
 @keyframes hop {
   from {
     transform: translateY(0px);
@@ -197,8 +197,6 @@ a:hover {
     padding-right: 10px;
     padding-bottom: 400px;
   }
-  
-  
 }
 
 @media (min-width: 544px) {
@@ -206,5 +204,4 @@ a:hover {
     padding-top: 80px;
     padding-left: 80px;
   }
-  
 }
