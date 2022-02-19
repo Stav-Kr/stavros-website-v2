@@ -46,10 +46,7 @@ html {
   position: relative;
   z-index: 2;
 }
-.hmbg{
-  color: white;
 
-}
 .abt::after {
   content: "";
   width: 100%;
@@ -64,7 +61,6 @@ html {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  align-items: center;
 }
 
 /* Typing animation*/
@@ -211,27 +207,26 @@ a:hover {
 }
 
 
-/* temporary*/
-.loading:after {
-  content: '.';
-  animation: dots 2s steps(1, end) infinite;}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
 
-@keyframes dots {
-  0%, 20% {
-    color: rgba(0,0,0,0);
-    text-shadow:
-      .25em 0 0 rgba(0,0,0,0),
-      .5em 0 0 rgba(0,0,0,0);}
-  40% {
-    color: white;
-    text-shadow:
-      .25em 0 0 rgba(0,0,0,0),
-      .5em 0 0 rgba(0,0,0,0);}
-  60% {
-    text-shadow:
-      .25em 0 0 white,
-      .5em 0 0 rgba(0,0,0,0);}
-  80%, 100% {
-    text-shadow:
-      .25em 0 0 white,
-      .5em 0 0 white;}}
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
