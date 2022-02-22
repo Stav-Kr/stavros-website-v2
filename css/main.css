@@ -126,6 +126,7 @@ p,
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
 }
 a:hover {
   color: var(--hover_color);
@@ -197,6 +198,7 @@ a:hover {
     padding-right: 10px;
     padding-bottom: 400px;
   }
+  
 }
 
 @media (min-width: 544px) {
@@ -204,8 +206,11 @@ a:hover {
     padding-top: 80px;
     padding-left: 80px;
   }
+  
 }
-
+.blur{
+    background: rgba(0, 0, 0, 0.938);
+  }
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -229,3 +234,26 @@ a:hover {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+
+/*new nav bar stuff*/
+.primary-navigation{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+ 
+.primary-header{
+  
+  justify-content: space-between;
+  justify-items: center;
+  
+  
+}
+
+.flex{
+  display: flex;
+  gap: 1rem;
+}
+
