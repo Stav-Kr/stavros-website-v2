@@ -184,6 +184,10 @@ a:hover {
   color: rebeccapurple;
 }
 
+.abt_cl{
+  color: darkmagenta;
+}
+
 /*Media*/
 @media (max-width: 1024px) {
   .display-5 {
@@ -198,7 +202,6 @@ a:hover {
     padding-right: 10px;
     padding-bottom: 400px;
   }
-  
 }
 
 @media (min-width: 544px) {
@@ -206,11 +209,10 @@ a:hover {
     padding-top: 80px;
     padding-left: 80px;
   }
-  
 }
-.blur{
-    background: rgba(0, 0, 0, 0.938);
-  }
+.blur {
+  background: rgba(0, 0, 0, 0.938);
+}
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -235,25 +237,43 @@ a:hover {
   transform-origin: bottom left;
 }
 
-
-/*new nav bar stuff*/
-.primary-navigation{
+/*new nav bar stuff not active atm*/
+.primary-navigation {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  
-}
- 
-.primary-header{
-  
-  justify-content: space-between;
-  justify-items: center;
-  
-  
 }
 
-.flex{
+.primary-header {
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.flex {
   display: flex;
   gap: 1rem;
 }
 
+.loading:after {
+   content: '.';
+   animation: dots 2s steps(1, end) infinite;}
+
+ @keyframes dots {
+   0%, 20% {
+     color: rgba(0,0,0,0);
+     text-shadow:
+       .25em 0 0 rgba(0,0,0,0),
+       .5em 0 0 rgba(0,0,0,0);}
+   40% {
+     color: white;
+     text-shadow:
+       .25em 0 0 rgba(0,0,0,0),
+       .5em 0 0 rgba(0,0,0,0);}
+   60% {
+     text-shadow:
+       .25em 0 0 white,
+       .5em 0 0 rgba(0,0,0,0);}
+   80%, 100% {
+     text-shadow:
+       .25em 0 0 white,
+       .5em 0 0 white;}}
