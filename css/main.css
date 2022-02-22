@@ -126,6 +126,7 @@ p,
 
 a {
   color: var(--primary-color);
+  text-decoration: none;
 }
 a:hover {
   color: var(--hover_color);
@@ -183,6 +184,10 @@ a:hover {
   color: rebeccapurple;
 }
 
+.abt_cl{
+  color: darkmagenta;
+}
+
 /*Media*/
 @media (max-width: 1024px) {
   .display-5 {
@@ -205,8 +210,9 @@ a:hover {
     padding-left: 80px;
   }
 }
-
-
+.blur {
+  background: rgba(0, 0, 0, 0.938);
+}
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -214,7 +220,7 @@ a:hover {
 }
 
 .hover-underline-animation:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -229,6 +235,23 @@ a:hover {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/*new nav bar stuff not active atm*/
+.primary-navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-header {
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
 }
 
 .loading:after {
