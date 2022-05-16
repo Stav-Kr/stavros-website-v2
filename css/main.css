@@ -124,6 +124,12 @@ p,
   font-family: var(--bs-body-font-family);
 }
 
+.kepler{
+  color:cadetblue;
+}
+.kepler:hover {
+  color:darkcyan;
+}
 a {
   color: var(--primary-color);
   text-decoration: none;
