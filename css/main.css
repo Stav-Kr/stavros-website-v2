@@ -34,6 +34,7 @@ html {
   background-color: rgba(0, 0, 0, 0.938);
   z-index: -1;
 }
+
 .abt {
   position: relative;
   height: 100vh;
@@ -57,6 +58,7 @@ html {
   background-color: rgba(0, 0, 0, 0.938);
   z-index: -1;
 }
+
 .ah {
   position: relative;
   top: 50%;
@@ -75,16 +77,19 @@ html {
   0% {
     width: 0%;
   }
+
   80% {
     width: 100%;
   }
 }
 
 @keyframes blink {
+
   0%,
   100% {
     border-right: 2px solid transparent;
   }
+
   50% {
     border-right: 2px solid #222;
   }
@@ -109,6 +114,7 @@ p,
 .hello_msg {
   color: green;
 }
+
 /*About me btn*/
 .hero_scroll-btn {
   position: absolute;
@@ -124,16 +130,19 @@ p,
   font-family: var(--bs-body-font-family);
 }
 
-.kepler{
-  color:cadetblue;
+.kepler {
+  color: cadetblue;
 }
+
 .kepler:hover {
-  color:darkcyan;
+  color: darkcyan;
 }
+
 a {
   color: var(--primary-color);
   text-decoration: none;
 }
+
 a:hover {
   color: var(--hover_color);
 }
@@ -143,6 +152,7 @@ a:hover {
   transition-delay: 0.8s;
   animation: hop 1s infinite alternate;
 }
+
 .floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -166,10 +176,12 @@ a:hover {
     transform: translate(0, -0px);
   }
 }
+
 @keyframes hop {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(10px);
   }
@@ -181,6 +193,7 @@ a:hover {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 .abt_content-width {
   max-width: 456px;
   margin: 0 auto;
@@ -190,7 +203,7 @@ a:hover {
   color: rebeccapurple;
 }
 
-.abt_cl{
+.abt_cl {
   color: darkmagenta;
 }
 
@@ -199,9 +212,11 @@ a:hover {
   .display-5 {
     font-size: medium;
   }
+
   p {
     text-align: center;
   }
+
   .abt {
     padding-top: 500px;
     padding-left: 10px;
@@ -216,9 +231,11 @@ a:hover {
     padding-left: 80px;
   }
 }
+
 .blur {
   background: rgba(0, 0, 0, 0.938);
 }
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -261,25 +278,37 @@ a:hover {
 }
 
 .loading:after {
-   content: '.';
-   animation: dots 2s steps(1, end) infinite;}
+  content: '.';
+  animation: dots 2s steps(1, end) infinite;
+}
 
- @keyframes dots {
-   0%, 20% {
-     color: rgba(0,0,0,0);
-     text-shadow:
-       .25em 0 0 rgba(0,0,0,0),
-       .5em 0 0 rgba(0,0,0,0);}
-   40% {
-     color: white;
-     text-shadow:
-       .25em 0 0 rgba(0,0,0,0),
-       .5em 0 0 rgba(0,0,0,0);}
-   60% {
-     text-shadow:
-       .25em 0 0 white,
-       .5em 0 0 rgba(0,0,0,0);}
-   80%, 100% {
-     text-shadow:
-       .25em 0 0 white,
-       .5em 0 0 white;}}
+@keyframes dots {
+
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow:
+      .25em 0 0 rgba(0, 0, 0, 0),
+      .5em 0 0 rgba(0, 0, 0, 0);
+  }
+
+  40% {
+    color: white;
+    text-shadow:
+      .25em 0 0 rgba(0, 0, 0, 0),
+      .5em 0 0 rgba(0, 0, 0, 0);
+  }
+
+  60% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 rgba(0, 0, 0, 0);
+  }
+
+  80%,
+  100% {
+    text-shadow:
+      .25em 0 0 white,
+      .5em 0 0 white;
+  }
+}
