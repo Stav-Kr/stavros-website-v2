@@ -339,20 +339,12 @@ a:hover {
   margin: 10px;
 }
 
-.card-img {
-  grid-area: img;
-  background: url('../projectimg/img_pass.png');
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-size: cover;
-}
+.transparent-bg {
+  background: rgba(254, 252, 252, 0.03);
 
-.card-img2 {
-  grid-area: img;
-  background: url('../projectimg/img_g.png');
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-size: cover;
+  color: wh;
+  text-align: center;
+  font-size: 26px;
 }
 
 .card-img3 {
