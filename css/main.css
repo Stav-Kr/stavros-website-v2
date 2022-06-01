@@ -333,23 +333,23 @@ a:hover {
   font-family: "Railway", sans-serif;
   border-radius: 18px;
   background: black;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  /*box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);*/
   text-align: center;
   transition: 0.5s ease;
   margin: 10px;
 }
 
 .transparent-bg {
-  background: rgba(254, 252, 252, 0.03);
+  background: rgba(254, 252, 252, 0.00);
 
-  color: wh;
+
   text-align: center;
   font-size: 26px;
 }
 
 .card-img3 {
   grid-area: img;
-  background: url('../projectimg/img_dice.png');
+  background: url('../images/Screenshot 2022-06-01 at 03.36.05.png');
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -357,7 +357,7 @@ a:hover {
 
 .card-img4 {
   grid-area: img;
-  background: url('../projectimg/img_hat.jpeg');
+  background: url('../images/img_hat.jpeg');
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -367,7 +367,7 @@ a:hover {
   grid-area: text;
   margin: 25px;
   text-align: center;
-  color: white;
+
 }
 
 .git-link {
@@ -439,7 +439,7 @@ a :hover {
 
     grid-area: text;
     padding-top: 2%;
-    color: white;
+
   }
 
   a {
