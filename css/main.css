@@ -216,10 +216,29 @@ a:hover {
     text-align: center;
   }
 
+  .name {
+    padding-left: 10px;
+  }
+
   .wrapper {
+    display: inline;
+
+
+  }
+
+  .card {
+
     display: block;
-
-
+    grid-template-columns: 300px;
+    grid-template-rows: 2100px 2100px 80px;
+    grid-template-areas: 'img''text''link';
+    height: 250px;
+    font-family: "Railway", sans-serif;
+    border-radius: 18px;
+    background: black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 10px;
   }
 
   .abt {
