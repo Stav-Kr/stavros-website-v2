@@ -207,7 +207,8 @@ a:hover {
 }
 
 /*Media*/
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
+
   .display-5 {
     font-size: medium;
   }
@@ -347,6 +348,14 @@ a:hover {
 .card-img4 {
   grid-area: img;
   background: url('../images/img_hat.jpeg');
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-img {
+  grid-area: img;
+  background: url('../images/Screenshot 2022-06-06 at 00.24.32.png');
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
