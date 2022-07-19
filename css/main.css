@@ -65,6 +65,14 @@ html {
   transform: translateY(-50%);
 }
 
+.slash {
+  color: white;
+}
+
+.namee {
+  color: rebeccapurple;
+}
+
 /* Typing animation*/
 .text-typing {
   margin: 0px;
