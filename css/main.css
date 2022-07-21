@@ -115,8 +115,10 @@ p,
   color: var(--head_color);
 }
 
+
 .greet {
   color: rgb(24, 118, 224);
+
 }
 
 .hello_msg {
