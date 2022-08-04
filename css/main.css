@@ -52,6 +52,10 @@ html {
   color: crimson;
 }
 
+.dd {
+  font-size: x-large;
+}
+
 .abt::after {
   content: "";
   width: 100%;
