@@ -48,6 +48,10 @@ html {
   z-index: 2;
 }
 
+.ds {
+  color: crimson;
+}
+
 .abt::after {
   content: "";
   width: 100%;
